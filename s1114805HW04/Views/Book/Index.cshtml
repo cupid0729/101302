@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+@{
+    //var books = ViewData["books"] as s1114805HW04.Models.books;
+    var books = ViewBag.books;
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Books(@books.BookID) Information:</title>
+</head>
+<body>
+    <div>
+        <h2>@ViewBag.books</h2>
+        <table style="font-family:Arial">
+            <tr>
+                <td>BookID:</td>
+                <td>@books.BookID</td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td>@books.Name</td>
+            </tr>
+            <tr>
+                <td>author:</td>
+                <td>@books.author</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
